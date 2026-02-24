@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QuizKids — Apprendre en s'amusant</title>
+  <meta name="description" content="Présentation de QuizKids, l'application de quiz éducatifs pour enfants avec glisser-déposer et QCM." />
+  <style>
+    :root {
+      --bg: #f4fbff;
+      --text: #0a2540;
+      --accent: #13a8ff;
+      --accent-2: #6ad61f;
+      --card: #ffffff;
+      --line: #d6e8f5;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Nunito", "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top right, #e8f9ff 0%, transparent 38%),
+        radial-gradient(circle at top left, #ecffe3 0%, transparent 30%),
+        var(--bg);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1080px, calc(100% - 2rem));
+      margin: 0 auto;
+    }
+
+    .hero {
+      padding: 3rem 0 2.2rem;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-block;
+      border: 1px solid #a9dfff;
+      color: #037bc0;
+      font-weight: 700;
+      border-radius: 999px;
+      padding: .4rem .9rem;
+      background: #e9f8ff;
+      font-size: .9rem;
+    }
+
+    h1 {
+      margin: 1rem 0 1rem;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.15;
+    }
+
+    .lead {
+      margin: 0 0 1.2rem;
+      font-size: clamp(1.02rem, 2.3vw, 1.2rem);
+      max-width: 60ch;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .8rem;
+      margin-top: 1.3rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: .8rem 1rem;
+      border-radius: 12px;
+      border: 0;
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #00b9ff, #007bff);
+      color: #fff;
+      box-shadow: 0 10px 24px rgba(0, 125, 255, .25);
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: #005f99;
+      border: 1px solid #b6ddf8;
+    }
+
+    .hero-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 1rem;
+      box-shadow: 0 15px 36px rgba(7, 68, 115, 0.12);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 350px;
+    }
+
+    .hero-card img {
+      max-width: min(100%, 380px);
+      height: auto;
+      display: block;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      padding-bottom: 2.8rem;
+    }
+
+    .feature {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 1.1rem;
+    }
+
+    .feature h3 {
+      margin: .1rem 0 .4rem;
+      font-size: 1.1rem;
+    }
+
+    .feature p {
+      margin: 0;
+      font-size: .98rem;
+    }
+
+    .icon {
+      font-size: 1.7rem;
+    }
+
+    .section-title {
+      margin: .2rem 0 1rem;
+      font-size: clamp(1.4rem, 3.2vw, 2rem);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 1rem 2rem;
+      color: #4c6a80;
+      font-size: .95rem;
+    }
+
+    @media (max-width: 860px) {
+      .hero { grid-template-columns: 1fr; }
+      .features { grid-template-columns: 1fr; }
+      .hero-card { min-height: 280px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="container hero">
+    <div>
+      <span class="badge">🎓 Application éducative pour enfants</span>
+      <h1>QuizKids : des quiz ludiques pour apprendre en s'amusant</h1>
+      <p class="lead">
+        QuizKids propose des activités interactives sur plusieurs thèmes (animaux, couleurs, mathématiques, logique et plus encore).
+        Les enfants peuvent répondre en cliquant sur les bons choix ou en glissant-déposant des éléments au bon endroit,
+        puis découvrir leur score final.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#fonctionnalites">Voir les fonctionnalités</a>
+        <a class="btn btn-secondary" href="privacy/">Politique de confidentialité</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <img src="mascotte.svg" alt="Mascotte QuizKids" />
+    </div>
+  </header>
+
+  <main class="container" id="fonctionnalites">
+    <h2 class="section-title">Pourquoi les enfants adorent QuizKids ?</h2>
+
+    <section class="features" aria-label="Fonctionnalités de QuizKids">
+      <article class="feature">
+        <div class="icon" aria-hidden="true">🧩</div>
+        <h3>Glisser-déposer interactif</h3>
+        <p>Associer des objets, placer les bonnes réponses et apprendre par manipulation visuelle.</p>
+      </article>
+
+      <article class="feature">
+        <div class="icon" aria-hidden="true">✅</div>
+        <h3>Questions à choix</h3>
+        <p>Des questions simples où l'enfant clique sur la bonne réponse pour avancer.</p>
+      </article>
+
+      <article class="feature">
+        <div class="icon" aria-hidden="true">🏆</div>
+        <h3>Score final motivant</h3>
+        <p>À la fin de chaque série, l'application affiche le score pour valoriser les progrès.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    QuizKids © 2026 · Une expérience éducative positive, amusante et accessible.
+  </footer>
+</body>
+</html>
