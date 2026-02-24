@@ -1,0 +1,49 @@
+<svg width="620" height="620" viewBox="0 0 620 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mascotte QuizKids style cartoon">
+  <defs>
+    <linearGradient id="head" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6df5ff"/>
+      <stop offset="100%" stop-color="#0078ff"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c8ff44"/>
+      <stop offset="100%" stop-color="#4bb216"/>
+    </linearGradient>
+    <radialGradient id="eye" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#5349ff"/>
+      <stop offset="100%" stop-color="#11002f"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="620" height="620" fill="none"/>
+
+  <ellipse cx="310" cy="530" rx="180" ry="22" fill="#0a4a8f" opacity="0.18"/>
+
+  <circle cx="310" cy="390" r="128" fill="url(#body)"/>
+  <circle cx="210" cy="396" r="18" fill="#ffbf15"/>
+  <circle cx="308" cy="416" r="20" fill="#21b7ff"/>
+  <circle cx="388" cy="395" r="18" fill="#ff6b00"/>
+
+  <ellipse cx="142" cy="385" rx="54" ry="36" fill="#ff4f9f" transform="rotate(-30 142 385)"/>
+  <ellipse cx="480" cy="385" rx="54" ry="36" fill="#ff9f1c" transform="rotate(30 480 385)"/>
+
+  <circle cx="310" cy="220" r="170" fill="url(#head)"/>
+
+  <path d="M214 244 C 240 214, 276 208, 292 232" stroke="#17378f" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <path d="M406 244 C 380 214, 344 208, 328 232" stroke="#17378f" stroke-width="12" stroke-linecap="round" fill="none"/>
+
+  <ellipse cx="245" cy="260" rx="50" ry="64" fill="url(#eye)"/>
+  <ellipse cx="375" cy="260" rx="50" ry="64" fill="url(#eye)"/>
+  <circle cx="228" cy="234" r="12" fill="#fff"/>
+  <circle cx="358" cy="234" r="12" fill="#fff"/>
+
+  <path d="M250 316 Q310 372 370 316 Q310 300 250 316Z" fill="#65005b"/>
+  <ellipse cx="310" cy="336" rx="30" ry="16" fill="#ff5d7a"/>
+
+  <circle cx="226" cy="330" r="16" fill="#ff6fa9"/>
+  <circle cx="394" cy="330" r="16" fill="#ff6fa9"/>
+
+  <path d="M230 116 C186 72, 144 66, 112 84" stroke="#189ef8" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <circle cx="100" cy="80" r="34" fill="#39d4ff"/>
+  <path d="M388 116 C432 72, 474 66, 506 84" stroke="#189ef8" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <circle cx="518" cy="80" r="34" fill="#39d4ff"/>
+</svg>
